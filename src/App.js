@@ -13,19 +13,21 @@ import Home from './pages/Home'
 
 export default function App() {
   return (
-    <p>Under construction...</p>
-    // <Router basename='/'>
-    //   <div>
-    //     {/* <Navbar /> */}
-    //     <Container style={{"paddingBottom": '60px'}} fluid='md'>
-    //       <Switch>
-    //         <Route path="/">
-    //           <Home />
-    //         </Route>
-    //       </Switch>
-    //     </Container>
-    //     <Footer />
-    //   </div>
-    // </Router>
+    // <div>
+    //   <p>Under construction...</p>
+    // </div>
+    <Router basename='/'>
+      <div>
+        <Navbar />
+        <Container style={{"paddingBottom": '60px'}} fluid='md'>
+          <Switch>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Container>
+        <Footer />
+      </div>
+    </Router>
   );
 }

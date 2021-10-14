@@ -22,7 +22,7 @@ class Home extends React.Component {
     }
 
     fetchQuestionAnswer(text) {
-        axios.post("http://localhost:8080/question/", {
+        axios.post("https://qabackend-mgbfvhje3a-uc.a.run.app/question/", {
             'question': text
         }).then((resp) => {
             var answer = resp.data.answer
@@ -42,21 +42,6 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <Row className="justify-content-center align-items-center">
-                    <Col style={{ 'textAlign': 'left', 'padding': 10, 'paddingTop': 30 }} md="auto" className="justify-items-center">
-                        <Row className="justify-content-center align-items-center">
-                            <Col md="4">
-                                <Row className="justify-content-center">
-                                    <Image src={profilePic} roundedCircle fluid />
-                                </Row>
-                            </Col>
-                            <Col style={{ 'textAlign': 'left' }} md="4">
-                                <h1>Drew Hayward</h1>
-                                <h5>I'm a software developer interested in language interfaces, ML Engineering, and building real-world systems.</h5>
-                            </Col>
-                        </Row>
-                    </Col>
-                </Row>
 
                 <Row className="justify-content-center" style={{ padding: 10 }}>
                     <Col md={8}>
