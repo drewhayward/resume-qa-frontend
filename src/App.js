@@ -1,9 +1,9 @@
 import React from "react";
-import {
-  HashRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+// import {
+//   HashRouter as Router,
+//   Switch,
+//   Route
+// } from "react-router-dom";
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { Row, Col } from 'react-bootstrap'
@@ -16,18 +16,18 @@ export default function App() {
     // <div>
     //   <p>Under construction...</p>
     // </div>
-    <Router basename='/'>
+    // <Router basename='/'>
       <div>
         <Navbar />
         <Container style={{"paddingBottom": '60px'}} fluid='md'>
-          <Switch>
-            <Route path="/">
+          {/* <Switch>
+            <Route path="/"> */}
               <Home />
-            </Route>
-          </Switch>
+            {/* </Route>
+          </Switch> */}
         </Container>
-        <Footer />
+        {/* <Footer /> */}
       </div>
-    </Router>
+    // </Router>
   );
 }

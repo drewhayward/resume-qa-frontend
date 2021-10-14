@@ -1,22 +1,24 @@
 import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import { Container } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Container, NavDropdown } from 'react-bootstrap'
+import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse'
+// import { Link } from 'react-router-dom'
 
 const navbar = () =>
     (
-    <Navbar bg="light" expand="lg">
+    <Navbar sticky="top" bg="light" expand="lg">
         <Container fluid='sm'>
-            <Navbar.Brand><a href="https://drewhayward.github.io">Drew Hayward</a></Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            {/* <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ml-auto">
-                <Nav.Link as={Link} to="/">About</Nav.Link>
-                <Nav.Link as={Link} to="/publications">Publications</Nav.Link>
-                <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
-                </Nav>
-            </Navbar.Collapse> */}
+            <Navbar.Brand>Talk to Résumé</Navbar.Brand>
+            {/* <Nav.Link href="https://drewhayward.github.io">Drew Hayward</Nav.Link> */}
+            {/* <NavbarCollapse> */}
+                {/* <Nav> */}
+                    <NavDropdown title="Code">
+                        <NavDropdown.Item href="https://github.com/drewhayward/resume-qa-frontend">Frontend</NavDropdown.Item>
+                        <NavDropdown.Item href="https://github.com/drewhayward/resume-qa-frontend">Backend</NavDropdown.Item>
+                    </NavDropdown>
+                {/* </Nav> */}
+            {/* </NavbarCollapse> */}
         </Container>
     </Navbar>
     )

@@ -42,7 +42,19 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-
+                <Row className="justify-content-center">
+                    <Col md={6}>
+                        <p>
+                            Talk to resume is a fun little project to learn/practice deploying NLP/ML models.
+                            Type in any question you might ask about my professional experience and see how
+                            the model answers!
+                        </p>
+                        <b>
+                            Please note that my little demo here feels no remorse in lying about my experince.
+                            If you want to confirm its answers, go checkout my social media or reach out.
+                        </b>
+                    </Col>
+                </Row>
                 <Row className="justify-content-center" style={{ padding: 10 }}>
                     <Col md={8}>
                         <QABar onSubmit={this.fetchQuestionAnswer} />
@@ -53,7 +65,6 @@ class Home extends React.Component {
                         <DialogHistory history={this.state.history} />
                     </Col>
                 </Row>
-
             </div >
         )
     }
