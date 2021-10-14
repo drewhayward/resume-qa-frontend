@@ -8,7 +8,7 @@ const navbar = () =>
     (
     <Navbar bg="light" expand="lg">
         <Container fluid='sm'>
-            <Navbar.Brand  as={Link} to="/">Drew Hayward</Navbar.Brand>
+            <Navbar.Brand><a href="https://drewhayward.github.io">Drew Hayward</a></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             {/* <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
