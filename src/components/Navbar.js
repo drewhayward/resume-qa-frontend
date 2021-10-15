@@ -17,7 +17,7 @@ const navbar = () =>
             <Nav.Link href="https://drewhayward.github.io">Author</Nav.Link>
             <NavDropdown title="Code">
                 <NavDropdown.Item href="https://github.com/drewhayward/resume-qa-frontend">Frontend</NavDropdown.Item>
-                <NavDropdown.Item href="https://github.com/drewhayward/resume-qa-frontend">Backend</NavDropdown.Item>
+                <NavDropdown.Item href="https://github.com/drewhayward/resume-qa-backend">Backend</NavDropdown.Item>
             </NavDropdown>
                 {/* </Nav> */}
             {/* </NavbarCollapse> */}

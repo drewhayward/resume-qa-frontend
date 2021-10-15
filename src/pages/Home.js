@@ -50,7 +50,7 @@ class Home extends React.Component {
                             the model answers!
                         </p>
                         <b>
-                            Please note that my little demo here feels no remorse in lying about my experince.
+                            Please note that my little demo here feels no remorse in lying about my experience.
                             If you want to confirm its answers, go checkout my social media or reach out via email.
                         </b>
                     </Col>
