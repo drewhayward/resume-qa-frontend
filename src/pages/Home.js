@@ -45,13 +45,13 @@ class Home extends React.Component {
                 <Row className="justify-content-center">
                     <Col md={6}>
                         <p>
-                            Talk to resume is a fun little project to learn/practice deploying NLP/ML models.
+                            Talk to resume is a fun little work-in-progress to learn/practice deploying NLP/ML models.
                             Type in any question you might ask about my professional experience and see how
                             the model answers!
                         </p>
                         <b>
                             Please note that my little demo here feels no remorse in lying about my experince.
-                            If you want to confirm its answers, go checkout my social media or reach out.
+                            If you want to confirm its answers, go checkout my social media or reach out via email.
                         </b>
                     </Col>
                 </Row>
